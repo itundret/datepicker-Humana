@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Datepicker Example</title>
+  </head>
+  <body>
+    <label for="datepicker-input">Select a date:</label>
+    <input type="text" id="datepicker-input" />
+    <link rel="stylesheet" href="datepicker.css">
+    <script src="compiled_datepicker.js"></script>
+    <script>
+      // Initialize the datepicker
+      const inputElement = document.getElementById("datepicker-input");
+      const datepicker = new Datepicker({
+        inputElement,
+        blackoutDates: [new Date(2023, 3, 1), new Date(2023, 3, 30)],
+      });
+    </script>
+  </body>
+</html>

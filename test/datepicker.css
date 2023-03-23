@@ -1,0 +1,71 @@
+/* Datepicker Popup */
+.datepicker-popup {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  /* Datepicker Header */
+  .datepicker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  /* Datepicker Month/Year Label */
+  .datepicker-month-year-label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  /* Datepicker Navigation Buttons */
+  .datepicker-header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  /* Datepicker Days Grid */
+  .datepicker-days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+  }
+
+  /* Datepicker Day of Week */
+  .datepicker-day-of-week {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* Datepicker Day */
+  .datepicker-day {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  /* Datepicker Day: Hover */
+  .datepicker-day:hover {
+    background-color: #eee;
+  }
+
+  /* Datepicker Day: Selected */
+  .datepicker-day.selected {
+    background-color: #007bff;
+    color: white;
+  }
+
+  /* Datepicker Day: Blackout */
+  .datepicker-day.blackout {
+    opacity: 0.5;
+    cursor: default;
+  }
